@@ -1,5 +1,5 @@
-const { app } = require("./app")
-const port = 4000;
+let app = require("./app")
+const port = process.env.PORT || 3000;
 
 app.get('/', (_, res) => {
     res.send("this is RESPONSE ")
