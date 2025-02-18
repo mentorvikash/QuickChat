@@ -1,4 +1,6 @@
 let app = require("./app")
+require("./config/dbconfig")
+
 const port = process.env.PORT || 3000;
 
 app.get('/', (_, res) => {
